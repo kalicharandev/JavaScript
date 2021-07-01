@@ -16,6 +16,15 @@
 
 <p id="num3" style="display:none">Hello JavaScript!</p>
 
-<button type="button" onclick="document.getElementById('num3').style.display='block'">touch</button>
+<button type="button" onclick="document.getElementById('num3').style.display='block'">touch</button><br>
+
+<p id="num4">script tag</p>
+<button type="button" onclick="myFunction1()">Try it</button>
+
+<script>
+function myFunction1() {
+  document.getElementById("num4").innerHTML = "we can put script tag below body or head";
+}
+</script>
 </body>
 </html>
