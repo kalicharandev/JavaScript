@@ -25,9 +25,18 @@
 <button type="button" onclick="document.write(3+6)">Try it</button><br>
 <p>print the current page.</p>
 
-<button onclick="window.print()">Print</button>
+<button onclick="window.print()">Print</button><br>
+<p>JavaScript statements are separated by semicolons.</p>
+
+<p id="num5"></p>
 
 <script>
+let a, b, c;
+a = 5;
+b = 6;
+c = a + b;
+document.getElementById("num5").innerHTML = c;
+
 window.alert(5 + 6)
 alert(2 + 4);
 function myFunction1() {
