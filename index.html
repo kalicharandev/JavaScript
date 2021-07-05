@@ -44,27 +44,67 @@
 <p id="num9"></p><br>
 <h2>JavaScript $</h2>
 <p id="num10"></p><br>
+<h2>JavaScript Hoisting</h2>
+<p id="num11"></p><br>
+
+<h2>JavaScript Hoisting err</h2>
+
+<p id="num12"></p><br>
+
+<h2>JavaScript let</h2>
+<p id="num13"></p><br>
+
+<h2>JavaScript const Array</h2>
+
+
+<p id="num14"></p><br>
+
+<h2>JavaScript const objects</h2>
+
+
+<p id="num15"></p><br>
+<h2>JavaScript const variables has block scope</h2>
+
+<p id="num16"></p><br>
+<h2>The += Operator</h2>
+<p id="num17"></p><br>
+<h3>javascript arithmetic Math.pow()</h3>
+
+<p id="num18"></p><br>
+<h2>JavaScript Functions</h2>
+<p id="num18"></p><br>
+<h2>JavaScript Functions</h2>
+<p id="num20"></p><br>
+
+<h2>JavaScript Functionsreturn</h2>
+<p id="num21"></p><br>
+<h2>JavaScript Functions without return</h2>
+<p id="num22"></p><br>
+
 <script>
-    var pi = 3.14;
-var person = "kali charan";
-var answer = 'im back';
-
-document.getElementById("num8").innerHTML =
-pi + "<br>" + person + "<br>" + answer;
-
-let a, b, c;
+  function myFunction1() {
+  document.getElementById("num4").innerHTML = "we can put script tag below body or head";
+}
+    let a, b, c;
 a = 1;
 b = 9;
 c = a + b;
 document.getElementById("num5").innerHTML = c;
+
+document.getElementById("num6").innerHTML = (5 + 6) * 10;
+window.alert(5 + 6)
 
 let lastname, lastName;
 firstName = "kali";
 lastname = "charan";
 document.getElementById("num7").innerHTML = lastname;
 
-document.getElementById("num6").innerHTML = (5 + 6) * 10;
-window.alert(5 + 6)
+var pi = 3.14;
+var person = "kali charan";
+var answer = 'im back';
+
+document.getElementById("num8").innerHTML =
+pi + "<br>" + person + "<br>" + answer;
 
 a = "5" + 2 + 3;
 document.getElementById("num9").innerHTML = a;
@@ -73,9 +113,71 @@ var $ = 2;
 var $myMoney = 5;
 document.getElementById("num10").innerHTML = $ + $myMoney;
 //alert(2 + 4);
-function myFunction1() {
-  document.getElementById("num4").innerHTML = "we can put script tag below body or head";
+
+carName = "Volvo";
+document.getElementById("num11").innerHTML = carName;
+var carName;
+try {
+  carName = "Saab";
+  let carName = "Volvo";
 }
+catch(err) {
+  document.getElementById("num12").innerHTML = err;
+}
+let x = 2;   
+
+{
+  let x = 3;   
+}
+
+{
+  let x = 4;   
+}
+document.getElementById("num13").innerHTML = x;
+const cars = ["Saab", "Volvo", "BMW"];
+cars[0] = "Toyota";
+cars.push("Audi");
+document.getElementById("num14").innerHTML = cars; 
+
+const car = {type:"Fiat", model:"500", color:"white"};
+car.color = "red";
+car.owner = "Johnson";
+document.getElementById("num15").innerHTML = "Car owner is " + car.owner; 
+
+const  x = 10;
+
+{  
+const x = 2;
+}
+
+document.getElementById("num16").innerHTML = "x is " + x;
+var x = 10;
+x += 5;
+document.getElementById("num17").innerHTML = x;
+let x = 5;
+document.getElementById("num18").innerHTML = Math.pow(x,2);
+
+function myFunction(s, p) {
+  return s * p;
+}
+document.getElementById("num19").innerHTML = myFunction(4, 3);
+var x = myFunction(5, 3);
+document.getElementById("num20").innerHTML = x;
+
+function myFunction(a, b) {
+  return a * b;
+}
+function toCelsius(f) {
+  return (5/9) * (f-32);
+}
+document.getElementById("num21").innerHTML = toCelsius(77);
+
+document.getElementById("num22").innerHTML =
+"The temperature is " + toCelsius(77) + " Celsius";
+
+function toCelsius(fahrenheit) {
+  return (5/9) * (fahrenheit-32);
+} 
 </script>
 </body>
 </html>
