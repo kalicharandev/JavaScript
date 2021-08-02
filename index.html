@@ -4,5 +4,31 @@
     <p id="num">JavaScript can change HTML content.</p>
 
 <button type="button" onclick="document.getElementById('num').innerHTML = 'JavaScript accepts single or double quotes.'">Click Me!</button><br>
+<p id="num1">JavaScript can hide HTML elements.</p>
+
+<button type="button" onclick="document.getElementById('num1').style.display='none'">Click it</button><br>
+
+<p id="num2">JavaScript can change the style of an HTML element.</p>
+
+<button type="button" onclick="document.getElementById('num2').style.fontSize='25px'">Click </button><br>
+<p>JavaScript can show hidden HTML elements.</p>
+
+<p id="num3" style="display:none">Hello JavaScript!</p>
+
+<button type="button" onclick="document.getElementById('num3').style.display='block'">touch</button><br>
+
+<p id="num4">js script tag</p>
+<button type="button" onclick="myFunction1()">Try it</button><br>
+<p>using docu.write</p>
+
+<button type="button" onclick="document.write(3+6)">Try it</button><br>
+<p>print the current page.</p>
+
+<button onclick="window.print()">Print</button><br>
+<script>
+  function myFunction1() {
+  document.getElementById("num4").innerHTML = "we can put script tag below body or head";
+}
+</script>
   </body>
 </html>
