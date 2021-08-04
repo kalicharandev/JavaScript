@@ -2,10 +2,16 @@
 <html>
 <body>
 
-<h2>JavaScript Variables</h2>
+<h2>JavaScript objects</h2>
 
 <p id="demo"></p>
 
+<h2>JavaScript objects</h2>
+
+<p id="demo1"></p>
+<h2>JavaScript Object Definition</h2>
+
+<p id="demo2"></p>
 
 <script>
 let car = "Fiat";
@@ -15,7 +21,10 @@ document.getElementById("demo").innerHTML = car;
 const bike = {type:"pulsar", model:"rs200", color:"white"};
 
 
-document.getElementById("demo").innerHTML = "The car type is " + bike.color;
+document.getElementById("demo1").innerHTML = "The car type is " + bike.color;
+const person = {firstName:"kali", lastName:"charan", age:22, eyeColor:"black"};
+document.getElementById("demo2").innerHTML =
+person.firstName + " is " + person.age + " years old.";
 </script>
 
 
