@@ -5,12 +5,24 @@
 <h2>JavaScript length of String Properties</h2>
 
 <p id="demo"></p><br>
+<p>The escape sequence \" inserts a double quote in a string.</p>
 
+<p id="demo1"></p><br>
+
+<h2> JavaScript String</h2>
+
+<p id="demo2"></p>
 
 <script>
-let text = "ABCDEFGHIJKLMNOPQRSTUVWXY";
+let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 document.getElementById("demo").innerHTML = text.length;
 
+let text = "We are the so-called \"Vikings\" from the north.";
+document.getElementById("demo1").innerHTML = text; 
+let x = "John";        
+let y = new String("John");  
+document.getElementById("demo").innerHTML =
+typeof x + "<br>" + typeof y;
 
 </script>
 
