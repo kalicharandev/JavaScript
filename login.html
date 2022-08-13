@@ -21,12 +21,12 @@
         console.log("222 " + password);
 
         // document.getElementById("demo").innerHTML = username + " " +  password;
-        if(username === "")
+        if(username === "" || password === "" )
         {
         console.log("NOT Ok");
         document.getElementById("demo").innerHTML ="NOT OK";
 
-    }else if (password !== "" && username !== "")
+    }else //if(password !== "" && username !== "")
        {
         console.log("OK");
         document.getElementById("demo").innerHTML ="OK";
