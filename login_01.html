@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>username</h2>
+<input type="text" name="username" id="username"/>
+<p id="username_errormessage"></p>
+
+<h2>password</h2>
+<input type="password" name="password" id="password"/>
+<p id="password_errormessage"></p>
+
+<p id="demo"></p>
+<button type="button" onclick="myFunction()">submit</button>
+<script>
+    function myFunction() 
+    {
+        //document.getElementById("demo").innerHTML = username + password;
+        var username =  document.getElementById("username").value;
+        console.log("username " + username);
+
+        var password =  document.getElementById("password").value;
+        console.log("password  " + password);
+
+
+       
+
+        if(
+            username !== "" && password !== ""  &&
+            username === "kalis" && password === "welcome" 
+          ){
+            console.log("welcome " + username);
+           document.getElementById("demo").innerHTML ="welcome " + username;
+
+          }else {
+                if( username === ""){
+                    console.log("invalid username");
+                    document.getElementById("demo").innerHTML ="invalid username";
+                }
+
+                if (password === ""){
+                    console.log("invalid password");
+                    document.getElementById("demo").innerHTML = "invalid password";
+                }
+
+                if(password === "" && username === "" ){
+                    console.log("incorrect username and password")
+                    document.getElementById("demo").innerHTML ="incorrect username and password"
+                }
+                
+          }
+
+    }
+        </script>
+        </body>
+        </html>

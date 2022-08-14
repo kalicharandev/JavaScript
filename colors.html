@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h2>color</h2>
+<input type="text" name="color" id ="color"/>
+<p id="color_message"></p>
+<button type ="button" onclick="mycolor()">button</button>
+<script>
+function mycolor(){
+    var  color =  document.getElementById("color").value;
+    console.log(" color " +  color)
+     document.getElementById("color_message").innerHTML= color;
+     document.getElementById("color_message").style.color = color;
+   if (color === "red"){
+    console.log("color is red");
+        document.getElementById("color_message").innerHTML ="color is red";
+    }
+    else if( color ==="blue"){
+                    console.log("color is blue");
+                    document.getElementById("color_message").innerHTML ="color is blue";
+                }
+
+                else if( color ==="green"){
+                    console.log("color is green");
+                    document.getElementById("color_message").innerHTML ="color is green";
+                }
+                else if( color ==="yellow"){
+                    console.log("color is yellow");
+                    document.getElementById("color_message").innerHTML ="color is yellow";
+                }
+                else if( color ==="pink"){
+                    console.log("color is pink");
+                    document.getElementById("color_message").innerHTML ="color is pink";
+                }
+
+else{
+    console.log("Different color");
+                    document.getElementById("color_message").innerHTML ="Different color";
+
+}                
+
+
+    
+
+
+}
+</script>
+</body>
+</html>
