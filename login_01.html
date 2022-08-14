@@ -15,7 +15,6 @@
 <script>
     function myFunction() 
     {
-        //document.getElementById("demo").innerHTML = username + password;
         var username =  document.getElementById("username").value;
         console.log("username " + username);
 
@@ -26,7 +25,7 @@
        
 
         if(
-            username !== "" && password !== ""  &&
+            username !== "" && password !== "" &&
             username === "kalis" && password === "welcome" 
           ){
             console.log("welcome " + username);
@@ -42,10 +41,11 @@
                     console.log("invalid password");
                     document.getElementById("demo").innerHTML = "invalid password";
                 }
+                
 
                 if(password === "" && username === "" ){
-                    console.log("incorrect username and password")
-                    document.getElementById("demo").innerHTML ="incorrect username and password"
+                    console.log("please fill the username and password")
+                    document.getElementById("demo").innerHTML ="please fill the username and password"
                 }
                 
           }

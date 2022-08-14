@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function myFunction() {
+            let name = document.getElementById("demo").value;
+            let result = name.toUpperCase();
+
+            for(i=0; i < name.length; i++){
+            
+                // document.getElementById("demo").innerHTML = result;
+
+                console.log(name[i]);
+
+            }
+
+        }
+      
+        </script>
+</head>
+<body>
+<h2>Enter Name</h2>
+<input type="text" id ="demo" />
+
+    <br/>
+    <button type ="button" onclick="myFunction()">Try it</button>
+</body>
+</html>
