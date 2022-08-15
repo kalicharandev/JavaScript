@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>enter the number</h2>
+    <input type ="number"  id="number1"></input>
+    <h2>enter the number</h2>
+    <input type ="number" id="number2"></input>
+    <h2>enter the number</h2>
+    <input type ="number" id="number3"></input>
+    <h2>enter the number</h2>
+    <input type ="number" id="number4"></input>
+    <h2>enter the number</h2>
+    <input type ="number" id="number5"></input>
+    <p id="demo1"></p>
+    <button type ="button" onclick="myFunction()">submit</button>
+    <script>
+            function myFunction() {
+
+      var number1 = document.getElementById("number1").value;
+      console.log("number1 " + number1);
+
+      var number2 = document.getElementById("number2").value;
+      console.log("number2 " + number2);
+
+      var number3 = document.getElementById("number3").value;
+      console.log("number3 " + number3);
+
+      var number4 = document.getElementById("number4").value;
+      console.log("number4 " + number4);
+
+      var number5 = document.getElementById("number5").value;
+      console.log("number5 " + number5);
+
+
+  document.getElementById("demo1").innerHTML =  parseInt(number1) +  parseInt(number2)  + parseInt(number3) +  parseInt(number4) +  parseInt(number5);
+
+            }
+
+
+    </script>
+    </body>
+    </html>
