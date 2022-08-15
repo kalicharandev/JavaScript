@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>enter the number</h2>
+    <input type ="number"  id="number1"></input>
+    <h2>enter the number</h2>
+    <input type ="number" id="number2"></input>
+    <h2>enter the number</h2>
+    <input type ="number" id="number3"></input>
+    <h2>enter the number</h2>
+    <input type ="number" id="number4"></input>
+    <h2>enter the number</h2>
+    <input type ="number" id="number5"></input>
+    <p id="addition"></p>
+    <p id="subtraction"></p>
+    <p id ="multiplication"></p>
+    <p id="division"></p>
+    <p id ="modulus"></p>
+    
+    
+    <button type ="button" onclick="myFunction()">submit</button>
+    <script>
+            function myFunction() {
+
+      var number1 = document.getElementById("number1").value;
+      console.log("number1 " + number1);
+
+      var number2 = document.getElementById("number2").value;
+      console.log("number2 " + number2);
+
+      var number3 = document.getElementById("number3").value;
+      console.log("number3 " + number3);
+
+      var number4 = document.getElementById("number4").value;
+      console.log("number4 " + number4);
+
+      var number5 = document.getElementById("number5").value;
+      console.log("number5 " + number5);
+      var addition = parseInt(number1) +  parseInt(number2)  + parseInt(number3) +  parseInt(number4) +  parseInt(number5);
+      var subtraction = parseInt(number1) -  parseInt(number2)  - parseInt(number3) -  parseInt(number4) -  parseInt(number5);
+      var multiplication = parseInt(number1) *  parseInt(number2)  * parseInt(number3) *  parseInt(number4) *  parseInt(number5);
+      var division = addition /5;
+      var modulus = addition %5;
+
+  document.getElementById("addition").innerHTML = addition ;
+  document.getElementById("subtraction").innerHTML =  subtraction;
+  document.getElementById("multiplication").innerHTML = multiplication ;
+  document.getElementById("division").innerHTML =  division;
+  document.getElementById("modulus").innerHTML =  modulus;
+
+    
+       }
+
+
+
+    </script>
+    </body>
+    </html>

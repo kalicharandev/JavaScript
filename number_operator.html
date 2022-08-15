@@ -12,6 +12,9 @@
     <h2>enter the number</h2>
     <input type ="number" id="number5"></input>
     <p id="demo1"></p>
+   
+    
+    
     <button type ="button" onclick="myFunction()">submit</button>
     <script>
             function myFunction() {
@@ -31,10 +34,10 @@
       var number5 = document.getElementById("number5").value;
       console.log("number5 " + number5);
       var z = parseInt(number1) +  parseInt(number2)  + parseInt(number3) +  parseInt(number4) +  parseInt(number5);
+      
 
-  document.getElementById("demo1").innerHTML = z ;
-        
-      if(z > 0 && z <= 10) {
+        document.getElementById("demo1").innerHTML = z ;
+          if(z > 0 && z <= 10) {
         console.log("less or equal to ten");
         document.getElementById("demo1").innerHTML ="less or equal to ten" + " "+  z;
 
@@ -73,10 +76,11 @@
        }else{
         console.log("greater than thundred");
         document.getElementById("demo1").innerHTML ="greater than thundred" + " "+  z;
-      }
+    
+    
        }
 
-
+    }
 
     </script>
     </body>
