@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Age Calculator</h2>
+<h2>date</h2>
+<input type="text" name="date" id="date" minlength="1" maxlength="2"/>
+<h2>month</h2>
+<input type="text" name="month" id="month" minlength="1" maxlength="2"/>
+<h2>year</h2>
+<input type="text" name="year" id="year" minlength="4" maxlength="4"/>
+<p id="demo"></p>
+<br>
+<br>
+
+<button type="button" onclick="age()">submit</button>
+<script>
+    function age(){
+     var d1 = document.getElementById("date").value;
+     console.log("date" + d1);
+    var m1 = document.getElementById("month").value;
+    console.log("month" + m1);
+    var y1 = document.getElementById("year").value;
+    console.log("year" + y1);
+    var date = new Date();
+    var d2 = date.getDate();
+    var m2 = date.getMonth();
+    var y2 = date.getFullYear();
+    var d = d2 - d1;
+    
+    var m = m2 - m1;
+    var y = y2 - y1;
+    document.getElementById("demo").innerHTML =
+        "Your Age is " + y + " Years " + m + " Months " + d + " Days";
+
+    }
+    </script>
+    </body>
+    </html>
