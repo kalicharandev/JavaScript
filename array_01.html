@@ -4,19 +4,19 @@
 
 <h2>JavaScript Arrays</h2>
 
-<p>Adding elements with high indexes can create undefined "holes" in an array.</p>
+<p>The best way to loop through an array is using a standard for loop:</p>
 
 <p id="demo"></p>
 
 <script>
-const fruits = ["Banana", "Orange", "Apple"];
-fruits[6] = "Lemon";
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let fLen = fruits.length;
 
-let f = fruits.length;
-let text = "";
-for (i = 0; i < f; i++) {
-  text += fruits[i] + "<br>";
+let text = "<ul>";
+for (let i = 0; i < fLen; i++) {
+  text += "<li>" + fruits[i] + "</li>";
 }
+text += "</ul>";
 
 document.getElementById("demo").innerHTML = text;
 </script>
