@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>A demonstration of how to access a Slider Control</h2>
+<h2>chemistry</h2>
+<input type="range" id="chemistry">
+<input type="text" id="chemistry_text">
+
+
+
+<p id="demo"></p>
+
+<script>
+
+var ran = document.getElementById("chemistry");
+
+var output = document.getElementById("demo");
+output.innerHTML = ran.value;
+
+ran.oninput = function() {
+  output.innerHTML = this.value;
+  
+}
+</script>
+
+</body>
+</html>
